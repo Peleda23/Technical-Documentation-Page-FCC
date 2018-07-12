@@ -1,0 +1,75 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+:root {
+  --dark: #2d3142;
+  --lihgter: #4f5d75;
+  --lihgt: #bfc0c0;
+  --white: #ededed;
+  --orange: #ef8354;
+}
+
+body {
+  background: var(--white);
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+main header {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 5px;
+}
+
+/* navbar */
+
+#nav-bar {
+  background: var(--lihgter);
+  color: white;
+  max-width: 300px;
+}
+
+#nav-bar header {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+#nav-bar ul {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: repeat(auto-fit, minmax(40px, 1fr));
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#nav-bar a {
+  background: var(--lihgt);
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  height: 100%;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  align-self: center;
+  border-top: 1px solid var(--dark);
+  text-transform: capitalize;
+  text-align: center;
+  display: grid;
+}

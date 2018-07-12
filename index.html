@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assests/styles.css">
   <title>Technicla Documentation Page</title>
 </head>
 <body>
-  <nav id="nav-bar">
-    <header>Lorem, ipsum.</header>
+  <div id="container">
+  <nav id="nav-bar">  
     <ul>
+      <header>CSS: Cascading Style Sheets</header>
       <a href="#" class="nav-link">
-        <li>lorem</li>
+        <li>What is CSS?</li>
       </a>
       <a href="#" class="nav-link">
-        <li>lorem</li>
+        <li>How does CSS affect HTML?</li>
       </a>
       <a href="#" class="nav-link">
         <li>lorem</li>
@@ -36,15 +38,22 @@
 
   <main id="main-doc">
     <section class="main-section">
-      <header>Lorem, ipsum.</header>
+      <header>What is CSS?</header>
       <article>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur quod rem porro nisi vero nihil beatae maxime totam est architecto.</p>
+        <p>As we have mentioned before, CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.</p>
+        <p>A document is usually a text file structured using a markup language — HTML is the most common markup language, but you will also come across other markup languages such as SVG or XML.</p>
+        <p>Presenting a document to a user means converting it into a usable form for your audience. Browsers, like Firefox, Chrome or Internet Explorer, are designed to present documents visually, for example, on a computer screen, projector or printer.</p>
       </article>
     </section>
     <section class="main-section">
-      <header>Lorem, ipsum.</header>
+      <header>How does CSS affect HTML?</header>
       <article>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quia, atque dolor architecto corrupti dolore est reprehenderit provident perferendis laboriosam!</p>
+          <p>Web browsers apply CSS rules to a document to affect how they are displayed. A CSS rule is formed from:</p>
+          <ul>
+            <li>A set of properties, which have values set to update how the HTML content is displayed, for example I want my element's width to be 50% of its parent element, and its background to be red.</li>
+            <li>A selector, which selects the element(s) you want to apply the updated property values to. For example, I want to apply my CSS rule to all the paragraphs in my HTML document.</li>
+          </ul>
+          <p>A set of CSS rules contained within a stylesheet determines how a webpage should look. You will learn a lot more about what CSS syntax looks like in the next article of the module — CSS Syntax.</p>
         </article>
     </section>
     <section class="main-section">
@@ -78,6 +87,6 @@
         </article>
     </section>
   </main>
-  
+</div>
 </body>
 </html>
