@@ -1,6 +1,7 @@
 /* Global */
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
 :root {
   --dark: #2d3142;
@@ -8,6 +9,7 @@
   --lihgt: #bfc0c0;
   --white: #ededed;
   --orange: #ef8354;
+  --p-padding: 40px;
 }
 
 body {
@@ -17,16 +19,108 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 main header {
   font-size: 30px;
   padding-top: 20px;
   padding-left: 40px;
 }
 
+section {
+  padding-left: var(--p-padding);
+}
+
+section header {
+  font-size: 35px;
+}
+
+/* code box */
+
+.code {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  color: black;
+  border-left: 5px solid var(--orange);
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.code-sample {
+  padding: 10px;
+  border: 1px solid var(--lihgt);
+  border-left: 5px solid var(--orange);
+  height: 250px;
+  font-family: 'Ubuntu Mono', monospace;
+  background: white;
+}
+
+.code-inside {
+  background: yellow;
+  border: 1px solid black;
+}
+
+.code-sample p {
+  color: red;
+  text-decoration: underline;
+}
+
+.code-sample ul {
+  text-decoration: underline;
+}
+
+.code li {
+  height: 24px; 
+}
+.code-g {
+  color: #999999;
+}
+
+.code-b {
+  color: #0077aa;
+}
+
+.code-bl {
+  color: black;
+}
+
+.code-gr {
+  color: #669900;
+}
+
+.code-r {
+  color: #990055;
+}
+
+.code-pad2
+{
+  padding-left: 10px;
+}
+
+.code-pad4 {
+  padding-left: 20px;
+}
+
+.code-pad6 {
+  padding-left: 30px;
+}
+
+/* red box */
+
+.red-box {
+  background: #ffe7e8;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #e66465;
+}
+
 #container {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 5px;
+  margin-left: 300px;
+  margin-right: 30px;
 }
 
 /* navbar */
@@ -35,6 +129,12 @@ main header {
   background: var(--lihgter);
   color: white;
   max-width: 300px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 #nav-bar header {
