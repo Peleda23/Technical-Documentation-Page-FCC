@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assests/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
   <title>Technicla Documentation Page</title>
 </head>
 
@@ -29,11 +31,11 @@
         <a href="#CSS_declaration" class="nav-link">
           <li>CSS declaration</li>
         </a>
-        <a href="#" class="nav-link">
-          <li>lorem</li>
+        <a href="#CSS_declaration_blocks" class="nav-link">
+          <li>CSS declaration blocks</li>
         </a>
-        <a href="#" class="nav-link">
-          <li>lorem</li>
+        <a href="#CSS_statements" class="nav-link">
+          <li>CSS statements</li>
         </a>
       </ul>
     </nav>
@@ -44,25 +46,37 @@
         <article>
           <p>As we have mentioned before, CSS is a language for specifying how documents are presented to users — how they are
             styled, laid out, etc.</p>
-          <p>A document is usually a text file structured using a markup language — HTML is the most common markup language,
-            but you will also come across other markup languages such as SVG or XML.</p>
-          <p>Presenting a document to a user means converting it into a usable form for your audience. Browsers, like Firefox,
-            Chrome or Internet Explorer, are designed to present documents visually, for example, on a computer screen, projector
+          <p>A
+            <strong>document</strong> is usually a text file structured using a
+            <em>markup language</em> —
+            <span class="text">HTML</span> is the most common markup language, but you will also come across other markup languages such as
+            <span class="text">SVG</span> or
+            <span class="text">XML</span>.</p>
+          <p>
+            <strong>Presenting</strong> a document to a user means converting it into a usable form for your audience.
+            <span class="text">Browsers</span>, like
+            <span class="text">Firefox</span>,
+            <span class="text">Chrome</span> or
+            <span class="text">Internet Explorer</span>, are designed to present documents visually, for example, on a computer screen, projector
             or printer.</p>
         </article>
       </section>
       <section class="main-section">
         <header id="How_does_CSS_affect_HTML?">How does CSS affect HTML?</header>
         <article>
-          <p>Web browsers apply CSS rules to a document to affect how they are displayed. A CSS rule is formed from:</p>
+          <p>Web browsers apply
+            <strong>CSS rules</strong> to a document to affect how they are displayed. A CSS rule is formed from:</p>
           <ul>
-            <li>A set of properties, which have values set to update how the HTML content is displayed, for example I want my
-              element's width to be 50% of its parent element, and its background to be red.</li>
-            <li>A selector, which selects the element(s) you want to apply the updated property values to. For example, I want
-              to apply my CSS rule to all the paragraphs in my HTML document.</li>
+            <li>A set of
+              <span class="text">properties</span>, which have values set to update how the HTML content is displayed, for example
+              <em>I want my element's width to be 50% of its parent element, and its background to be red</em>.</li>
+            <li>A
+              <span class="text">selector</span>, which selects the element(s) you want to apply the updated property values to. For example,
+              <em>I want to apply my CSS rule to all the paragraphs in my HTML document</em>.</li>
           </ul>
-          <p>A set of CSS rules contained within a stylesheet determines how a webpage should look. You will learn a lot more
-            about what CSS syntax looks like in the next article of the module — CSS Syntax.</p>
+          <p>A set of CSS rules contained within a
+            <strong>stylesheet</strong> determines how a webpage should look. You will learn a lot more about what CSS syntax looks
+            like in the next article of the module — CSS Syntax.</p>
         </article>
       </section>
       <section class="main-section">
@@ -71,8 +85,12 @@
           <p>When a browser displays a document, it must combine the document's content with its style information. It processes
             the document in two stages:</p>
           <ol>
-            <li>The browser converts HTML and CSS into the DOM (Document Object Model). The DOM represents the document in the
-              computer's memory. It combines the document's content with its style.</li>
+            <li>The browser converts
+              <span class="text">HTML</span> and
+              <span class="text">CSS</span> into the
+              <span class="text">DOM</span> (
+              <em>Document Object Model</em>). The DOM represents the document in the computer's memory. It combines the document's
+              content with its style.</li>
             <li>The browser displays the contents of the DOM.</li>
           </ol>
         </article>
@@ -119,14 +137,17 @@
               <li>
                 <span class="code-pad4">
                   <</span>
-                    <span class="code-r">meta</span><span class="code-gr"> charset</span>="<span class="code-b">utf-8</span>"
+                    <span class="code-r">meta</span>
+                    <span class="code-gr"> charset</span>="
+                    <span class="code-b">utf-8</span>"
                     <span>></span>
               </li>
               <li>
                 <span class="code-pad4">
                   <</span>
                     <span class="code-r">title</span>
-                    <span>></span><span class="code-bl">My CSS experiment</span>
+                    <span>></span>
+                    <span class="code-bl">My CSS experiment</span>
                     <span>
                       <</span>
                         <span class="code-r">/title</span>
@@ -135,7 +156,11 @@
               <li>
                 <span>
                   <</span>
-                    <span class="code-r">link</span><span class="code-gr">rel</span>="<span class="code-b">stylesheet</span>" <span class="code-gr">href</span>="<span class="code-b">styles.css</span>"
+                    <span class="code-r">link</span>
+                    <span class="code-gr">rel</span>="
+                    <span class="code-b">stylesheet</span>"
+                    <span class="code-gr">href</span>="
+                    <span class="code-b">styles.css</span>"
                     <span>></span>
               </li>
               <li>
@@ -154,7 +179,8 @@
                 <span class="code-pad4">
                   <</span>
                     <span class="code-r">h1</span>
-                    <span class="">></span><span class="code-bl">Hello World!</span>
+                    <span class="">></span>
+                    <span class="code-bl">Hello World!</span>
                     <span>
                       <</span>
                         <span class="code-r">/h1</span>
@@ -164,7 +190,8 @@
                 <span class="code-pad4">
                   <</span>
                     <span class="code-r">p</span>
-                    <span>></span><span class="code-bl">This is my first Css example</span>
+                    <span>></span>
+                    <span class="code-bl">This is my first Css example</span>
                     <span>
                       <</span>
                         <span class="code-r">/p</span>
@@ -181,7 +208,8 @@
                 <span class="code-pad6">
                   <</span>
                     <span class="code-r">li</span>
-                    <span>></span><span class="code-bl">This is</span>
+                    <span>></span>
+                    <span class="code-bl">This is</span>
                     <span>
                       <</span>
                         <span class="code-r">/li</span>
@@ -191,7 +219,8 @@
                 <span class="code-pad6">
                   <</span>
                     <span class="code-r">li</span>
-                    <span>></span><span class="code-bl">a list</span>
+                    <span>></span>
+                    <span class="code-bl">a list</span>
                     <span>
                       <</span>
                         <span class="code-r">/li</span>
@@ -220,18 +249,33 @@
           <p>And the CSS file:</p>
           <div class="code">
             <ol class="code-g">
-              <li><span class="code-gr">h1</span> {</li>
-              <li><span class="code-pad4 code-r">color</span>: <span class="code-bl">blue</span>;</li>
-              <li><span class="code-pad4 code-r">background-color</span>: <span class="code-bl">yellow</span>;</li>
-              <li><span class="code-pad4 code-r">border</span>: <span class="code-r">1</span><span class="code-bl">px solid black</span>;</li>
+              <li>
+                <span class="code-gr">h1</span> {</li>
+              <li>
+                <span class="code-pad4 code-r">color</span>:
+                <span class="code-bl">blue</span>;</li>
+              <li>
+                <span class="code-pad4 code-r">background-color</span>:
+                <span class="code-bl">yellow</span>;</li>
+              <li>
+                <span class="code-pad4 code-r">border</span>:
+                <span class="code-r">1</span>
+                <span class="code-bl">px solid black</span>;</li>
               <li>}</li>
               <li></li>
-              <li><span class="code-gr"></span>{</li>
-              <li><span class="code-r code-pad4">color</span>: <span class="code-bl">red</span>;</li>
+              <li>
+                <span class="code-gr"></span>{</li>
+              <li>
+                <span class="code-r code-pad4">color</span>:
+                <span class="code-bl">red</span>;</li>
               <li>}</li>
               <li></li>
-              <li><spans class="code-gr">p</spans>, <span class="code-gr">li</span> {</li>
-              <li><span class="code-pad4 code-r">text-decoration</span>: <span class="code-bl">underline</span>;</li>
+              <li>
+                <spans class="code-gr">p</spans>,
+                <span class="code-gr">li</span> {</li>
+              <li>
+                <span class="code-pad4 code-r">text-decoration</span>:
+                <span class="code-bl">underline</span>;</li>
               <li>}</li>
             </ol>
           </div>
@@ -251,29 +295,139 @@
       <section class="main-section">
         <header id="CSS_declaration">CSS declaration</header>
         <article>
-          <p>Setting CSS properties to specific values is the core function of the CSS language. The CSS engine calculates which declarations apply to every single element of a page in order to appropriately lay it out and style it. What is important to remember is that both properties and values are case-sensitive in CSS. The property and value in each pair is separated by a colon (:).</p>
+          <p>Setting CSS properties to specific values is the core function of the CSS language. The CSS engine calculates which
+            declarations apply to every single element of a page in order to appropriately lay it out and style it. What
+            is important to remember is that both properties and values are case-sensitive in CSS. The property and value
+            in each pair is separated by a colon (
+            <span class="code-back">:</span>).</p>
           <img src="https://en-support.files.wordpress.com/2011/09/css-selectors-lrg.png" alt="">
-          <p>There are more than 300 different properties in CSS and nearly an infinite number of different values. Not all pairs of properties and values are allowed; each property has a specific list of valid values defined for it.</p>
+          <p>There are more than 300 different properties in CSS and nearly an infinite number of different values. Not all
+            pairs of properties and values are allowed; each property has a specific list of valid values defined for it.</p>
           <div class="red-box">
-            <p><strong>Important</strong>: If a property is unknown or if a value is not valid for a given property, the declaration is deemed invalid and is wholly ignored by the browser's CSS engine.</p>
-        </div>
-        <div class="red-box">
-          <p><strong>Important</strong>: In CSS (and other web standards), US spelling has been agreed on as the standard to stick to where uncertainty arises. For example, color should always be spelled color. colour won't work.</p>
-        </div>
+            <p>
+              <strong>
+                <i class="fas fa-exclamation-circle"></i> Important</strong>: If a property is unknown or if a value is not valid for a given property, the declaration
+              is deemed
+              <em>invalid</em> and is wholly ignored by the browser's CSS engine.</p>
+          </div>
+          <div class="red-box">
+            <p>
+              <strong>
+                <i class="fas fa-exclamation-circle"></i> Important</strong>: In CSS (and other web standards), US spelling has been agreed on as the standard
+              to stick to where uncertainty arises. For example, color should always be spelled
+              <span class="code-back">color</span>.
+              <span class="code-back">colour</span> won't work.</p>
+          </div>
         </article>
       </section>
       <section class="main-section">
-        <header>Lorem, ipsum.</header>
+        <header id="CSS_declaration_blocks">CSS declaration blocks</header>
         <article>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident libero labore eos aperiam mollitia. Atque suscipit
-            ea vel rerum laboriosam!</p>
+          <p>Declarations are grouped in
+            <strong>blocks</strong>, with each set of declarations being wrapped by an opening curly brace, (
+            <span class="code-back">{</span>) and a closing one (
+            <span class="code-back">}</span>).</p>
+          <p>Each declaration contained inside a
+            <strong>declaration block</strong> has to be separated by a semi-colon (
+            <span class="code-back">;</span>), otherwise the code won't work (or will at least give unexpected results.) The last declaration of
+            a block doesn't need to be terminated by a semi-colon, though it is often considered
+            <em>good style</em> to do so as it prevents forgetting to add it when extending the block with another declaration.</p>
+          <div class="yellow-box">
+            <p>
+              <strong>
+                <i class="far fa-sticky-note"></i> Note</strong>: Blocks can sometimes be nested; in such cases opening and closing braces must be nested
+              logically, in the same fashion as the tags of nested HTML elements. The most common example you'll come across
+              are
+              <em>@-rules</em>, which are blocks beginning with an @ identifier like
+              <span class="code-back">@media</span>,
+              <span class="code-back">@font-face</span>, etc (See
+              <em>CSS Statements</em> below).</p>
+          </div>
+          <div class="yellow-box">
+            <p>
+              <strong>
+                <i class="far fa-sticky-note"></i> Note</strong>: A declaration block may be empty — this is perfectly valid.</p>
+          </div>
         </article>
       </section>
       <section class="main-section">
-        <header>Lorem, ipsum.</header>
+        <header id="CSS_statements">CSS statements</header>
         <article>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident libero labore eos aperiam mollitia. Atque suscipit
-            ea vel rerum laboriosam!</p>
+          <p>CSS Rules are the main building blocks of a style sheet — the most common block you'll see in CSS. But there are
+            other types of block that you'll come across occasionally — CSS rules are one type of so-called CSS statements.
+            The other types are as follows:</p>
+          <ul>
+            <li>
+              <strong>At-rules</strong> are used in CSS to convey metadata, conditional information, or other descriptive information.
+              They start with an at sign (
+              <span class="code-back">@</span>), followed by an identifier to say what kind of rule it is, then a syntax block of some kind, ending
+              with a semi-colon (;). Each type of at-rule, defined by the identifier, will have its own internal syntax and
+              semantics. Examples include:
+              <ul>
+                <li>
+                  <span class="code-back">@charset</span> and
+                  <span class="code-back">@import</span> (metadata)</li>
+                <li>
+                  <span class="code-back">@media</span> or
+                  <span class="code-back">@document</span> (conditional information, also called nested statements, see below.)</li>
+                <li>
+                  <span class="code-back">@font-face</span> (descriptive information)</li>
+              </ul>
+              Specific syntax example:
+              <div class="code">
+                <ol class="code-g">
+                  <li>
+                    <span class="code-b">@import</span>
+                    <span class="code-br">'custom.css'</span>;</li>
+                </ol>
+              </div>
+              This at-rule imports another CSS file into the current CSS.
+            </li>
+            <li>
+              <strong>Nested statements</strong> are a specific subset of at-rule, the syntax of which is a nested block of CSS rules
+              that will only be applied to the document if a specific condition is matched:
+              <ul>
+                <li>The
+                  <span class="code-back">@media</span> at-rule content is applied only if the device which runs the browser matches the expressed
+                  condition;</li>
+                <li>the
+                  <span class="code-back">@supports</span> at-rule content is applied only if the browser actually supports the tested feature;</li>
+                <li>the
+                  <span class="code-back">@document</span> at-rule content is applied only if the current page matches some conditions.</li>
+              </ul>
+              Specific syntax example
+              <div class="code">
+                <ol class="code-g">
+                  <li>
+                    <span class="code-bl">@media (min-width: 801px) {</span>
+                  </li>
+                  <li>
+                    <span class="code-bl code-pad4">body {</span>
+                  </li>
+                  <li>
+                    <span class="code-bl code-pad6">margin: 0 auto;</span>
+                  </li>
+                  <li>
+                    <span class="code-bl code-pad6">width: 800px;</span>
+                  </li>
+                  <li>
+                    <span class="code-bl code-pad4">}</span>
+                  </li>
+                  <li>
+                    <span class="code-bl">}</span>
+                  </li>
+                </ol>
+              </div>
+              The above nested statement only applies the nested rule when the page's width exceeds 800 pixels.
+            </li>
+          </ul>
+          <p>You'll learn more about some types of at-rules/nested statements at appropriate places in the course.</p>
+          <div class="red-box">
+            <p>
+              <strong>
+                <i class="fas fa-exclamation-circle"></i> Important</strong>: Any statement which isn't a ruleset, an at-rule, or a nested statement is invalid
+              and therefore ignored.</p>
+          </div>
         </article>
       </section>
     </main>

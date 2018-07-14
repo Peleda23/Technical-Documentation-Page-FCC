@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
-
 :root {
   --dark: #2d3142;
   --lihgter: #4f5d75;
@@ -35,6 +34,24 @@ section {
 
 section header {
   font-size: 35px;
+}
+
+.main-section {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.main-section li {
+  line-height: 1.8;
+}
+
+.main-section ul,
+p {
+  margin: 10px auto;
+}
+
+.text {
+  text-decoration: underline dotted;
 }
 
 /* code box */
@@ -70,11 +87,21 @@ section header {
   text-decoration: underline;
 }
 
-.code li {
-  height: 24px; 
+.code-back {
+  background: var(--lihgt);
+  font-family: 'Ubuntu Mono', monospace;
 }
+
+.code li {
+  height: 24px;
+}
+
 .code-g {
   color: #999999;
+}
+
+.code-br {
+  color: #a67f70;
 }
 
 .code-b {
@@ -93,8 +120,7 @@ section header {
   color: #990055;
 }
 
-.code-pad2
-{
+.code-pad2 {
   padding-left: 10px;
 }
 
@@ -109,18 +135,33 @@ section header {
 /* red box */
 
 .red-box {
-  background: #ffe7e8;
+  background: #fdadaf;
   padding: 10px;
   margin-bottom: 10px;
   border-left: 5px solid #e66465;
+  line-height: 1.7;
+}
+
+/* yellow box */
+
+.yellow-box {
+  background: #fff3d4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #f6b73c;
+  line-height: 1.7;
 }
 
 #container {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-areas: "side-bar content";
   grid-gap: 5px;
   margin-left: 300px;
   margin-right: 30px;
+}
+
+#main-doc {
+  grid-area: content;
 }
 
 /* navbar */
@@ -131,10 +172,11 @@ section header {
   max-width: 300px;
   height: 100%;
   position: fixed;
-  z-index: 1;
+  /* z-index: 1; */
   top: 0;
   left: 0;
   overflow: hidden;
+  grid-area: side-bar;
 }
 
 #nav-bar header {
@@ -172,4 +214,32 @@ section header {
   text-transform: capitalize;
   text-align: center;
   display: grid;
+}
+
+@media (max-width: 815px) {
+   #container {
+    grid-template-areas: "side-bar" "content";
+    padding: 0;
+    margin: 0; 
+  }
+  #nav-bar {
+    grid-area: side-bar;
+    position: relative;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    
+    max-width: 100%;
+    max-height: 275px;
+  }
+
+  #nav-bar ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #main-doc {
+    grid-area: content;
+    z-index: 1;
+  }
 }
