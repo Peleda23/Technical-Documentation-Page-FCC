@@ -166,7 +166,7 @@ p {
 
 /* navbar */
 
-#nav-bar {
+#navbar {
   background: var(--lihgter);
   color: white;
   max-width: 300px;
@@ -179,7 +179,7 @@ p {
   grid-area: side-bar;
 }
 
-#nav-bar header {
+#navbar header {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -190,7 +190,7 @@ p {
   letter-spacing: 3px;
 }
 
-#nav-bar ul {
+#navbar ul {
   display: grid;
   height: 100vh;
   grid-template-rows: repeat(auto-fit, minmax(40px, 1fr));
@@ -198,9 +198,11 @@ p {
   padding: 0;
   margin: 0;
   list-style: none;
+  overflow-y: auto;
+    overflow-x: hidden;
 }
 
-#nav-bar a {
+.nav-link {
   background: var(--lihgt);
   display: block;
   text-decoration: none;
@@ -211,7 +213,7 @@ p {
   font-size: 20px;
   align-self: center;
   border-top: 1px solid var(--dark);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   text-align: center;
   display: grid;
 }
@@ -222,24 +224,31 @@ p {
     padding: 0;
     margin: 0; 
   }
-  #nav-bar {
+  #navbar {
     grid-area: side-bar;
     position: relative;
     top: 0;
     padding: 0;
     margin: 0;
-    
+    z-index: 1;
     max-width: 100%;
     max-height: 275px;
-  }
-
-  #nav-bar ul {
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   #main-doc {
     grid-area: content;
     z-index: 1;
+  }
+
+  .main-section {
+    padding: 0;
+  }
+
+  .code  li{
+    position: relative;
+    overflow-x: scroll;
+   
+    
   }
 }

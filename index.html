@@ -13,36 +13,36 @@
 
 <body>
   <div id="container">
-    <nav id="nav-bar">
+    <nav id="navbar">
       <ul>
         <header>CSS: Cascading Style Sheets</header>
-        <a href="#What_is_CSS?" class="nav-link">
-          <li>What is CSS?</li>
-        </a>
-        <a href="#How_does_CSS_affect_HTML?" class="nav-link">
-          <li>How does CSS affect HTML?</li>
-        </a>
-        <a href="#How_does_CSS_actualy_work?" class="nav-link">
-          <li>How does CSS actually work?</li>
-        </a>
-        <a href="#A_touch_of_vocabulary" class="nav-link">
-          <li>A touch of vocabulary</li>
-        </a>
-        <a href="#CSS_declaration" class="nav-link">
-          <li>CSS declaration</li>
-        </a>
-        <a href="#CSS_declaration_blocks" class="nav-link">
-          <li>CSS declaration blocks</li>
-        </a>
-        <a href="#CSS_statements" class="nav-link">
-          <li>CSS statements</li>
-        </a>
+        
+          <li><a href="#What_is_CSS?"  class="nav-link">What is CSS?</a></li>
+        
+        
+          <li><a href="#How_does_CSS_affect_HTML?" class="nav-link">How does CSS affect HTML?</a></li>
+        
+        
+          <li><a href="#How_does_CSS_actually_work?" class="nav-link">How does CSS actually work?</a></li>
+        
+        
+          <li><a href="#A_touch_of_vocabulary" class="nav-link">A touch of vocabulary</a></li>
+      
+        
+          <li><a href="#CSS_declaration" class="nav-link">CSS declaration</a></li>
+        
+        
+          <li><a href="#CSS_declaration_blocks" class="nav-link">CSS declaration blocks</a></li>
+    
+        
+          <li><a href="#CSS_statements" class="nav-link">CSS statements</a></li>
+        
       </ul>
     </nav>
 
     <main id="main-doc">
-      <section class="main-section">
-        <header id="What_is_CSS?">What is CSS?</header>
+      <section class="main-section" id="What_is_CSS?">
+        <header>What is CSS?</header>
         <article>
           <p>As we have mentioned before, CSS is a language for specifying how documents are presented to users — how they are
             styled, laid out, etc.</p>
@@ -61,8 +61,8 @@
             or printer.</p>
         </article>
       </section>
-      <section class="main-section">
-        <header id="How_does_CSS_affect_HTML?">How does CSS affect HTML?</header>
+      <section class="main-section" id="How_does_CSS_affect_HTML?">
+        <header>How does CSS affect HTML?</header>
         <article>
           <p>Web browsers apply
             <strong>CSS rules</strong> to a document to affect how they are displayed. A CSS rule is formed from:</p>
@@ -79,8 +79,8 @@
             like in the next article of the module — CSS Syntax.</p>
         </article>
       </section>
-      <section class="main-section">
-        <header id="How_does_CSS_actualy_work?">How does CSS actualy work?</header>
+      <section class="main-section" id="How_does_CSS_actually_work?">
+        <header>How does CSS actually work?</header>
         <article>
           <p>When a browser displays a document, it must combine the document's content with its style information. It processes
             the document in two stages:</p>
@@ -95,8 +95,8 @@
           </ol>
         </article>
       </section>
-      <section class="main-section">
-        <header id="A_touch_of_vocabulary">A touch of vocabulary</header>
+      <section class="main-section" id="A_touch_of_vocabulary">
+        <header>A touch of vocabulary</header>
         <article>
           <p>At its most basic level, CSS consists of two building blocks:</p>
           <ul>
@@ -115,6 +115,7 @@
             <em>CSS Rulesets (or CSS Rules)</em>.</p>
           <p>Before getting too deep in theory and written explanation, let's look at a concrete example (we saw something very
             similar in our previous article.)</p>
+            <code>
           <div class="code">
             <ol class="code-g">
               <li>
@@ -246,7 +247,9 @@
               </li>
             </ol>
           </div>
+        </code>
           <p>And the CSS file:</p>
+          <code>
           <div class="code">
             <ol class="code-g">
               <li>
@@ -279,7 +282,9 @@
               <li>}</li>
             </ol>
           </div>
+          </code>
           <p>Combining these two gives us the following result:</p>
+          <code>
           <div class="code-sample">
             <div class="code-inside">
               <h1>Hello world!</h1>
@@ -290,10 +295,11 @@
               <li>a list</li>
             </ul>
           </div>
+        </code>
         </article>
       </section>
-      <section class="main-section">
-        <header id="CSS_declaration">CSS declaration</header>
+      <section class="main-section" id="CSS_declaration">
+        <header>CSS declaration</header>
         <article>
           <p>Setting CSS properties to specific values is the core function of the CSS language. The CSS engine calculates which
             declarations apply to every single element of a page in order to appropriately lay it out and style it. What
@@ -320,8 +326,8 @@
           </div>
         </article>
       </section>
-      <section class="main-section">
-        <header id="CSS_declaration_blocks">CSS declaration blocks</header>
+      <section class="main-section" id="CSS_declaration_blocks">
+        <header>CSS declaration blocks</header>
         <article>
           <p>Declarations are grouped in
             <strong>blocks</strong>, with each set of declarations being wrapped by an opening curly brace, (
@@ -350,8 +356,8 @@
           </div>
         </article>
       </section>
-      <section class="main-section">
-        <header id="CSS_statements">CSS statements</header>
+      <section class="main-section" id="CSS_statements">
+        <header>CSS statements</header>
         <article>
           <p>CSS Rules are the main building blocks of a style sheet — the most common block you'll see in CSS. But there are
             other types of block that you'll come across occasionally — CSS rules are one type of so-called CSS statements.
@@ -374,6 +380,7 @@
                   <span class="code-back">@font-face</span> (descriptive information)</li>
               </ul>
               Specific syntax example:
+              <code>
               <div class="code">
                 <ol class="code-g">
                   <li>
@@ -381,6 +388,7 @@
                     <span class="code-br">'custom.css'</span>;</li>
                 </ol>
               </div>
+            </code>
               This at-rule imports another CSS file into the current CSS.
             </li>
             <li>
@@ -389,13 +397,15 @@
               <ul>
                 <li>The
                   <span class="code-back">@media</span> at-rule content is applied only if the device which runs the browser matches the expressed
-                  condition;</li>
+                  condition;
+                </li>
                 <li>the
                   <span class="code-back">@supports</span> at-rule content is applied only if the browser actually supports the tested feature;</li>
                 <li>the
                   <span class="code-back">@document</span> at-rule content is applied only if the current page matches some conditions.</li>
               </ul>
               Specific syntax example
+              <code>
               <div class="code">
                 <ol class="code-g">
                   <li>
@@ -418,6 +428,7 @@
                   </li>
                 </ol>
               </div>
+            </code>
               The above nested statement only applies the nested rule when the page's width exceeds 800 pixels.
             </li>
           </ul>
